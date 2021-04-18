@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Arashi の Blog</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/arashi.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+
+    </head>
+    <script type="text/javascript">
+        var time = 0;
+        var WebProjectOneImage = ["assets/img/sirla_check_web.png", "assets/img/sirla_check_web_line_bot.png"]
+        var WebProjectOneCount = 0;
+
+        function CountTime(){
+            time += 1;
+            if (time == 7){
+                ChangeImage();
+                time = 0;
+            }       
+        }
+
+        function ChangeImage(){
+            if (WebProjectOneCount < WebProjectOneImage.length - 1){
+                WebProjectOneCount += 1;
+            }else{
+                WebProjectOneCount = 0;
+            }
+            //console.log(WebProjectOneCount)
+            document.getElementById("WebProjectOne").src = WebProjectOneImage[WebProjectOneCount];
+        }
+
+        window.onload = function()
+        { 
+            setInterval(CountTime, 1000)
+        }
+    </script>
+    <body id="page-top">
+        <script type="text/javascript" src="js/mouse.js" opacity= 0.6></script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">王譽錚的個人網頁</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#web_projects">Web Projects</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#game_projects">Game Projects</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Arashi の Blog</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A blog for Arashi's introduce</h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+                </div>
+            </div>
+        </header>
+        <!-- About me-->
+        <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">About me</h2>
+                        <p class="text-white-50">
+                        	系級：圖資三<br>
+                            名字：王譽錚<br>
+                            暱稱：嵐、小藍、黑貓先生<br>
+                            程式能力：Python、JavaScript、C++、C#<br>
+                            資料庫：MySQL、MongoDB<br>
+                            使用的遊戲引擎：Unity
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/ipad.png" alt="" />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="web_projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>系館輪值系統</h4>
+                            <p class="text-black-50 mb-0">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" id="WebProjectOne" src="assets/img/sirla_check_web.png" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white"><a href="https://lin.ee/oRVhRop">Sirla 對外課程 簽到bot</a></h4>
+                                    <p class="mb-0 text-white-50">為了便於統計以及公告對外課程的資訊，結合 ejs、JavaScript與 line API ，與讀書會 SIRLA 成員一起製作的一個line bot</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row/>
+                -->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6">
+                        <video class="img-fluid" controls>
+                            <source src="assets/video/Dont touch white DEMO.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white">JavaScript 小專案 別踩白塊兒</h4>
+                                    <p class="mb-0 text-white-50">參照手游 別踩白塊兒 的遊戲規則所建立的網頁版小遊戲</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-white" id="game_projects">
+            <div class="container">
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Escape Room</h4>
+                            <p class="text-black-50 mb-0">體感互動學分學程的期末專案，正在製作中，目前進度到第一關</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white"><a href="https://drive.google.com/file/d/1e4oLSdAUzBPivd_3q85zM3hBTaMfO1mJ/view?usp=sharing">Maze</a></h4>
+                                    <p class="mb-0 text-white-50">一個簡易的 VR 迷宮遊戲</p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white"><a href="https://lin.ee/mTZ7vos">系館尋寶獵人</a></h4>
+                                    <p class="mb-0 text-white-50">為增進大家對圖資系的了解，並且推廣系館的使用所舉辦的實境解謎遊戲</p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>        
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <h2 class="text-white mb-5">123</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://www.facebook.com/profile.php?id=100001038047304"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://github.com/arashi1214"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">©2021 Arashi の blog. Created By 王譽錚</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+<!--
+專案可以放對應連結或QR code?
+-->
