@@ -10003,6 +10003,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-black {
   color: #000000 !important;
+  font-weight: bolder;
 }
 
 a.text-black:hover, a.text-black:focus {
@@ -10019,11 +10020,13 @@ a.text-black:hover, a.text-black:focus {
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: bolder;
 }
 
 .text-white-50 {
   color: rgb(255, 255, 255) !important;
   font-size: 17px;
+  font-weight: bolder;
 }
 
 .text-hide {
