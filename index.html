@@ -25,7 +25,9 @@
     <script type="text/javascript">
         var time = 0;
         var WebProjectOneImage = ["assets/img/sirla_check_web.png", "assets/img/sirla_check_web_line_bot.png"]
+        var WebFeaturedProjectImage = ["assets/img/fjulibrary.png", "assets/img/fjulibrary2.png", "assets/img/fjulibrary3.png"]
         var WebProjectOneCount = 0;
+        var WebFeaturedProjectCount = 0;
 
         $(function(){
             $('#BackTop').click(function(){ 
@@ -51,8 +53,10 @@
         function ChangeImage(){
             if (WebProjectOneCount < WebProjectOneImage.length - 1){
                 WebProjectOneCount += 1;
+                WebFeaturedProjectCount += 1;
             }else{
                 WebProjectOneCount = 0;
+                WebFeaturedProjectCount = 0;
             }
             //console.log(WebProjectOneCount)
             document.getElementById("WebProjectOne").src = WebProjectOneImage[WebProjectOneCount];
@@ -107,7 +111,7 @@
                             暱稱：嵐、小藍、黑貓先生<br>
                             程式能力：Python、JavaScript、C++、C#<br>
                             資料庫：MySQL、MongoDB<br>
-                            使用的遊戲引擎：Unity
+                            遊戲引擎：Unity
                         </p>
                     </div>
                 </div>
