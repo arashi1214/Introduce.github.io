@@ -60,6 +60,7 @@
             }
             //console.log(WebProjectOneCount)
             document.getElementById("WebProjectOne").src = WebProjectOneImage[WebProjectOneCount];
+            document.getElementById("WebFeaturedProject").src = WebFeaturedProjectImage[WebFeaturedProjectCount];
         }
 
         window.onload = function()
@@ -123,11 +124,17 @@
             <div class="container">
                 <!-- Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" id="WebFeaturedProject" src="assets/img/fjulibrary.png" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>系館輪值系統</h4>
-                            <p class="text-black-50 mb-0">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                            <p class="text-black-50 mb-0">為了將系上輪值簽到、簽退與登記部分電子化以提高輪值的效率，並讓學員可以方便預約與查詢，與讀書會 SIRLA 成員一起建立的系統<br><br>
+                            使用技術：<br>
+                            程式語言：Python<br>
+                            網頁框架：Flask<br>
+                            資料庫：SQLite<br>
+                            伺服器環境：Debian<br>
+                            發佈伺服器：Apache</p>
                         </div>
                     </div>
                 </div>
@@ -141,10 +148,11 @@
                                     <h4 class="text-white"><a href="https://lin.ee/oRVhRop">Sirla 對外課程 簽到bot</a></h4>
                                     <p class="mb-0 text-white-50">為了便於統計以及公告對外課程的資訊，結合 ejs、JavaScript與 line API ，與讀書會 SIRLA 成員一起製作的一個line bot<br><br>
                                     使用技術：<br>
-                                    程式語言：node.js<br>
-                                    後端框架：express.js<br>
+                                    程式語言：Node.js<br>
+                                    網頁框架：Express.js<br>
                                     資料庫：MongoDB<br>
-                                    發佈伺服器：heroku
+                                    Line bot：JavaScript<br>
+                                    發佈伺服器：Heroku
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
@@ -184,9 +192,9 @@
                                     <h4 class="text-white"><a href="#">Bingo Bingo Boom!!!</a></h4>
                                     <p class="mb-0 text-white-50">讀者服務課堂專案<br>為推廣學校圖書館的電子資源，使用Django設計而成的一個Bingo遊戲與放置電子資源教學的網站<br><br>
                                     使用技術：<br>
-                                    程式語言：python<br>
-                                    資料庫：SQLite<br>
-                                    框架：Django
+                                    程式語言：Python<br>
+                                    網頁框架：Django<br>
+                                    資料庫：SQLite                              
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
@@ -204,7 +212,12 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Escape Room</h4>
-                            <p class="text-black-50 mb-0">體感互動學分學程的期末專案，正在製作中，目前進度到第一關</p>
+                            <p class="text-black-50 mb-0">體感互動學分學程的期末專案，正在製作中，目前進度到第一關<br><br>
+                            使用技術：<br>
+                            程式語言：C#<br>
+                            遊戲引擎：Unity 3D<br>
+                            遊戲平台：PC
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -219,7 +232,8 @@
                                     <p class="mb-0 text-white-50">一個簡易的 VR 迷宮遊戲<br><br>
                                     使用技術：<br>
                                     程式語言：C#<br>
-                                    遊戲引擎：Unity
+                                    遊戲引擎：Unity 3D<br>
+                                    遊戲平台：Android 手機
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
                                 </div>
@@ -237,7 +251,7 @@
                                     <h4 class="text-white"><a href="https://lin.ee/mTZ7vos">系館尋寶獵人</a></h4>
                                     <p class="mb-0 text-white-50">為增進大家對圖資系的了解，並且推廣系館的使用所舉辦的實境解謎遊戲<br><br>
                                     使用技術：<br>
-                                    程式語言：python<br>
+                                    程式語言：Python<br>
                                     資料庫：MongoDB
                                     </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
